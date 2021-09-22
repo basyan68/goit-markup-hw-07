@@ -1,0 +1,23 @@
+.thumb-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+}
+.thumb-social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    fill: $item-icon-clients;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        fill: $title-text-color;
+        background-color: $accent-color;
+        border-radius: 50%;
+    }
+}
+
