@@ -4,10 +4,7 @@
     padding: 40px 40px;
 }
 .modal-form__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
-    color: $primary-text-color;
+    @include font ($primary-text-family,normal,700,20px,1.15,0.03em,$primary-text-color);
     margin-bottom: 12px;
 }

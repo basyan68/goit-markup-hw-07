@@ -1,16 +1,8 @@
 .logo__text--blue-color {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.20;
-    color: #2196F3;
+    @include font ($subprimary-text-family,normal,700,26px,1.20,0.03em,$accent-color);
     display: inline-block;
 }
 .logo__text--black-color {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.20;
-    color: #212121;
     display: inline-block;
+    @include font ($subprimary-text-family,normal,700,26px,1.20,0.03em,$primary-text-color);
 }

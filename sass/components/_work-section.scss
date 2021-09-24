@@ -2,9 +2,7 @@
     padding-top: 0;
 }
 .work__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.15;
+    @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
     text-align: center;
     margin-bottom: 50px;
 }
@@ -21,13 +19,9 @@
     position: relative;
 }
 .work__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
+    @include font ($primary-text-family,normal,700,14px,1.15,0.03em,$title-text-color);
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $title-text-color;
     background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;

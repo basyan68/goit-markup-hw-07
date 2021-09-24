@@ -1,7 +1,7 @@
 .product__link {
     display: inline-block;
     text-decoration: none;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow $time $durarion;
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -19,8 +19,8 @@
         position: absolute;
         opacity: 0;
         transform: translateY(100%);
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity $time $durarion, 
+        transform $time $durarion;
     }
     .product__link:hover &::before,
     .product__link:focus &::before {
@@ -29,9 +29,7 @@
     }
 }
 .product__before {
-    font-size: 18px;
-    line-height: 1.55;
-    color: $title-text-color;
+    @include font ($primary-text-family,normal,400,18px,1.55,0.03em,$title-text-color);
     width: 370px;
     height: 294px;
     padding: 63px 24px;
@@ -55,17 +53,10 @@
     border-right: 1px solid $card-portfolio;
 }
 .product__title {
-    color: $primary-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font ($primary-text-family,normal,700,18px,2,0.06em,$primary-text-color);
     margin-bottom: 5px;
 }
 .product__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.85;
-    letter-spacing: 0.03em;
-    color: $subtitle-text-color;
+    @include font ($primary-text-family,normal,400,16px,1.85,0.03em,$subtitle-text-color);
+
 }

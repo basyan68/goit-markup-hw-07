@@ -2,12 +2,9 @@
     margin-left: 70px;
 }
 .footer-thumb-social__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
     text-transform: uppercase;
-    color: $title-text-color;
     margin-bottom: 20px;
+    @include font ($primary-text-family,normal,700,14px,1.15,0.03em,$title-text-color);
 }
 .footer-thumb-social__list {
     display: inline-flex;
@@ -30,7 +27,7 @@
     align-items: center;
     justify-content: center;
     display: inline-flex;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $time $durarion;
     &:hover {
         background-color: $accent-color;
         border-radius: 50%;

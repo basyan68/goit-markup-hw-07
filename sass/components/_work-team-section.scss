@@ -5,6 +5,8 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.15;
+    @include font ($primary-text-family,normal,700,36px,1.15,0.03em,$primary-text-color);
+
     text-align: center;
     margin-bottom: 50px;
 }
@@ -24,14 +26,12 @@
     padding: 30px 32px;
 }
 .work-team__subtitle {
-    font-weight: 500;
-    line-height: 1.20;
+    @include font ($primary-text-family,normal,500,16px,1.20,0.03em,$primary-text-color);
     text-align: center;
     margin-bottom: 10px;
 }
 .work-team__text {
-    line-height: 1.20;
     text-align: center;
-    color: $subtitle-text-color;
+    @include font ($primary-text-family,normal,400,16px,1.20,0.03em,$subtitle-text-color);
     margin-bottom: 16px;
 }

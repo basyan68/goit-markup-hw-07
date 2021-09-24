@@ -5,10 +5,7 @@
     position: relative;
 }
 .modal-form-field__label {
-    font-size: 12px;
-    line-height: 1.15;
-    letter-spacing: 0.01em;
-    color: $subtitle-text-color;
+    @include font ($primary-text-family,normal,400,12px,1.15,0.01em,$subtitle-text-color);
     margin-bottom: 4px;
     outline: none;
 }
@@ -20,7 +17,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color $time $durarion;
     &:focus {
         border-color: $accent-color;
     }
@@ -32,7 +29,7 @@
     bottom: 11px;
     left: 12px;
     fill: $primary-text-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill $time $durarion;
     .modal-form-field__input:focus + & {
         fill: $accent-color;
     }
@@ -45,7 +42,7 @@
     margin-bottom: 20px;
     outline: none;
     resize: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border $time $durarion;
     &:focus {
         border-color: $accent-color;
     }

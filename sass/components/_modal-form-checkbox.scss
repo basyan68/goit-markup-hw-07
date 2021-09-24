@@ -22,7 +22,7 @@
     font-size: 14px;
     line-height: 1.71;
     color: $subtitle-text-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $time $durarion;
     &::before {
         content: '';
         display: inline-block;
@@ -42,9 +42,7 @@
     }
 }
 .modal-form-checkbox__link {
-    font-size: 14px;
-    line-height: 1.70;
+    @include font ($primary-text-family,normal,400,14px,1.70,0.03em,$accent-color);
     text-decoration-line: underline;
-    color: $accent-color;
     display: inline;
 }
